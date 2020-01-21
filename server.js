@@ -12,9 +12,9 @@ require("dotenv").config({ path: "variables.env" });
 const User = require("./models/User");
 const Post = require("./models/Post");
 
-const user = "xxx";
-const password = "xxx";
-const claster = "xxx";
+const user = "alex277";
+const password = "02030405060708";
+const claster = "google";
 
 mongoose.connect(
   `mongodb+srv://${user}:${password}@cluster0-yn85g.gcp.mongodb.net/${claster}?retryWrites=true&w=majority`,
@@ -22,7 +22,7 @@ mongoose.connect(
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
-    dbName: "xxx"
+    dbName: "google"
   }
 )
 
